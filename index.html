@@ -3,26 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Cartoon Network</title>
-    
-    <!-- ESTA ETIQUETA DEFINE COMO SE TIENE QUE COMPORTAR NUESTRO VIEWPORT (lienzo) EN CADA RESOLUCIÓN - 
-            como ancho, el tamaño del dispositivo.
-            El usuario no pueda hacer zoom
-     -->
+
     <meta name="viewport" content="width=device-width, user-scallable=no">
-    
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-<!--   
+<!--
    General:
-   
+
         Colores:
             - azul: #2eade4;
-            - amarillo: #fff15c;   
+            - amarillo: #fff15c;
             - fucsia: rgb(226, 78, 155);
 
-        
+
         Los h2 tienen que tener un tamaño de fuente de 48px y estar centrados. Tiene que tener un margin en el eje Y de 20px.
         Los section tienen que tener un margin en el eje y de 20px y en el eje x de 50px
         Un padding de 15px. Además tener un borde redondeado de 10px
@@ -31,10 +27,10 @@
     <header>
         <!--  Vamos a ocultar el h1 y poner el logo de cartoon  -->
         <h1>Cartoon Network</h1>
-        
+
         <nav>
             <ul>
-                <!--  Esto lo vamos a convertir en íconos 
+                <!--  Esto lo vamos a convertir en íconos
                     - las imágenes tienen un tamaño de 100 x 100px.
                     - Usarlas más chicas (50-70px)
                 -->
@@ -67,13 +63,13 @@
     </header>
 
     <main>
-       
-        <!--       
+
+        <!--
             - El section sin margin ni border-radius
             - Alto de 500px
             - Color de fondo #c7e2f2
             - background banner de otra semana en cartoon que ocupe todo el ancho y esté pegado al borde inferior.
-            - El link "ver" tiene que quedar abajo del logo de cartoon (left: 370px - bottom 70px) con un ancho de 200px. 
+            - El link "ver" tiene que quedar abajo del logo de cartoon (left: 370px - bottom 70px) con un ancho de 200px.
         -->
         <section id="otraSemana">
             <h2>Otra Semana en Cartoon</h2>
@@ -84,15 +80,15 @@
                 Te invitamos a explorar tus shows favoritos de una manera muy singular en Otra
                 semana en Cartoon. </p>
 
-            
-                
+
+
             <a href="#" class="boton">Ver</a>
-            
+
         </section>
 
-       
-        <!--       
-            - El section tiene que tener un margen y padding en el eje X de 0px. 
+
+        <!--
+            - El section tiene que tener un margen y padding en el eje X de 0px.
             - Todos los articles tienen que quedar uno al lado del otro en 2 filas de 4 y un margin Y de 15px. Tambien un padding de 10px y un borde redondeado de 10px.
                 Los h3 tienen que tener un tamaño de fuente de 36px y centrado.
                 Cada uno tiene un color:
@@ -116,8 +112,8 @@
                     Superpoderosas. Son tres pequeñas niñas con una misión: salvar al mundo antes
                     de la hora de dormir. Ellas viven con el Profesor Utonio en una casa en las
                     afueras de Saltadilla, donde luchan con monstruos y villanos.</p>
-                    
-                    
+
+
             </article>
 
             <article>
@@ -192,91 +188,91 @@
         <aside id="banner">
             <img src="img/banner.jpg" alt="Desafiá tu imaginación con un dibujo">
         </aside>
-        
-        
-        
-        <!--        
+
+
+
+        <!--
             Los article van uno al lado del otro en una única fila.
             La imágen ocupa todo el ancho
             el h3 va de color gris (#b3b3b3) y un tamaño de 14px
             el párrafo, color negro y con un tamaño de 18px.
-            
+
             El botón mide 300px de ancho y 70px de alto, de color negro y bordes redondeados de 10px, con un tamaño de fuente de 20px y un margen superior de 30px.
         -->
         <section  class="contenedor" id="videos">
             <h2>Top videos</h2>
-            
-            
+
+
             <article>
                 <img src="img/video1.jpg" alt="Clarence">
                 <h3>Clarence</h3>
                 <p>Ansiedad</p>
             </article>
-            
+
             <article>
                 <img src="img/video2.jpg" alt="Steven Universe">
                 <h3>Steven Universe</h3>
                 <p>A León Le Encanta Acomodarse En Una Caja</p>
             </article>
-            
+
             <article>
                 <img src="img/video3.jpg" alt="Manzana y Cebollín">
                 <h3>Manzana y Cebollín</h3>
                 <p>Agua</p>
             </article>
-            
+
             <article>
                 <img src="img/video4.jpg" alt="Toontubers">
                 <h3>Toontubers</h3>
                 <p>Card Wars</p>
             </article>
-            
-            
+
+
             <a href="#" class="boton">Mirá todos los videos</a>
-            
+
         </section>
-        
-        
+
+
         <section id="contacto" class="contenedor">
             <h2>Contactate con nosotros</h2>
-            
-            <!--    
+
+            <!--
                 Para manejo de formularios vamos a tener la etiqueta <form></form>
-                
+
                 Adentro tenemos todos los elementos que pueda soportar la etiqueta:
                 En su mayoría, los elementos son inputs
                    Etiqueta <input /> -> tiene un atributo type que define el tipo de dato que va a ingresar el usuario
-                       type: 
+                       type:
                            - text: texto
                            - number: numero
                            - email: mail
                            - password: password (*********)
                     Todo formulario tiene que tener si o si al final un botón/input de tipo "submit" para enviar el formulario.
-                        
+
                         <input type="submit" value="Enviar"/>
-                        
+
                         <button type="submit">Enviar</button>
-                        
+
                     Diferencias:
                         - el input es mucho más dificil de modificar con css
             -->
-            <!-- 
+            <!--
                 Tiene 2 atributos obligatorios
                     action: A donde quiero mandar estos datos (un archivo que tome esos datos y haga algo - mandar un mail - )
                     method: Especificar cómo queremos mandar los datos
                         - Sepan que todo formulario que mande un dato importante, tiene que tener el valor POST en el atributo method.
-                    
+
             -->
             <form action="archivo_que_manda_mail" method="post">
                 <div>
                 <!--   compuesto por 2 elementos: input - label-> la etiqueta en la cual ponemos texto dentro del formulario y lo relacionamos a un input.
                      El label tiene un atributo for al cual le pasamos el id del input/textarea relacionado.
-                      
+
                         Nombre
-                        <input/>  
-                        
+                        <input/>
+
                     Para poner texto multilinea, tenemos la etiqueta <textarea></textarea>
-                    
+
               -->
                    <label for="nombre">Nombre</label>
                    <input type="text" id="nombre">
@@ -289,20 +285,20 @@
                     <label for="mensaje">Mensaje</label>
                     <textarea cols="30" rows="10" id="mensaje"></textarea>
                 </div>
-                
+
 <!--                <input type="submit" value="Enviar">-->
                 <button type="submit" class="boton">Enviar</button>
             </form>
-            
+
         </section>
     </main>
 
-   
-    <!--   
+
+    <!--
         Tiene que ocupar el ancho del body
         el párrafo queda de un lado y el logo del otro alineados en el centro.
         Fondo negro letras blancas.
-        
+
     -->
     <footer>
         <p>

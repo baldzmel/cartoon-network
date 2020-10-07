@@ -1,0 +1,278 @@
+@font-face{
+    font-family: lubalin-graph;
+    src: url(../font/lubalin-graph.woff);
+}
+
+@font-face{
+    font-family: avenir;
+    src: url(../font/avenir.woff);
+}
+
+*{
+    box-sizing: border-box;
+    font-family: avenir, sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 16px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: lubalin-graph, serif;
+}
+
+
+header{
+    height: 100px;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1{
+    display: block;
+    background-image: url("../img/logo.svg");
+    background-repeat: no-repeat;
+    width: 110px;
+    height: 50px;
+    font-size: 0;
+    margin-left: 15px;
+}
+
+header nav ul{
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li{
+    margin: auto 5px;
+}
+
+header nav a{
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-size: 0;
+    background-size: cover;
+}
+
+header nav ul li:nth-child(1) a{
+    background-image: url(../img/chicas-superpoderosas.webp);
+    background-color: #2eade4;
+}
+
+header nav ul li:nth-child(2) a{
+    background-image: url(../img/clarence.webp);
+    background-color: #fff15c;
+}
+
+header nav ul li:nth-child(3) a{
+    background-image: url(../img/gumball.webp);
+    background-color: rgb(226, 78, 155);
+}
+
+header nav ul li:nth-child(4) a{
+    background-image: url(../img/hora-de-aventura.webp);
+    background-color: #2eade4;
+}
+
+header nav ul li:nth-child(5) a{
+    background-image: url(../img/los-escandalosos.webp);
+    background-color: #fff15c;
+}
+
+header nav ul li:nth-child(6) a{
+    background-image: url(../img/pokemon-sol-y-luna.webp);
+    background-color: rgb(226, 78, 155);
+}
+
+header nav ul li:nth-child(7) a{
+    background-image: url(../img/steven-universe.webp);
+    background-color: #2eade4;
+}
+
+header nav ul li:nth-child(8) a{
+    background-image: url(../img/teen-titans.webp);
+    background-color: #fff15c;
+}
+
+
+main section{
+    margin: 20px 50px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+main section h2{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+main section:nth-child(1){
+    margin: 0;
+    border-radius: 0;
+    height: 500px;
+    background: url(../img/otra-semana-en-cartoon-banner.webp) no-repeat;
+    background-position: bottom center;
+    background-size: 100% auto ;
+    background-color: #c7e2f2;
+    position: relative;
+}
+
+main section:nth-child(1) a{
+    width: 200px;
+    border-radius: 10px;
+    background: #000;
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 70px;
+    left: 370px;
+    text-align: center;
+    text-decoration: none;
+}
+
+main section:nth-child(2){
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding:0;
+}
+
+main section:nth-child(2) h2{
+    width: 100%;
+    text-align: center;
+}
+main section:nth-child(2) article{
+    width: 23%;   
+    margin: 50px 1% 15px 1%;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgba(47,182,234,0.5);
+    position: relative;
+}
+
+main section:nth-child(2) article:before{
+    display: block;
+    content: "";
+    width: 150px;
+    height: 100px;
+    background: url(../img/chicas-superpoderosas-logo.webp) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    left:0;
+    right:0;
+    margin: auto;
+    top: -35px;
+}
+
+main section:nth-child(2) article h3{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+main section:nth-child(2) aside{
+    width: 100%;
+    height: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    background: url(../img/cartunes-pattern.svg) no-repeat 50%, url(../img/cartunes-banner.webp) no-repeat left center;
+    background-color:#342e34;
+
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+main section:nth-child(2) aside div{
+    width: 50%;
+    text-align: center;
+}
+
+main > aside{
+    border-left: 60px solid rgb(226, 78, 155);
+    border-right: 60px solid rgb(226, 78, 155);
+
+    margin-top: 50px;
+    text-align: center;
+}
+
+main > aside img{
+    width: 50%;
+    margin: auto;
+}
+
+
+.videos{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+
+.videos h2{
+    width: 100%;
+    text-align: center;
+}
+
+.videos article{
+    width: 25%;
+}
+
+.videos article img{
+    max-width: 100%;
+}
+
+.videos article h3,.videos article p{
+    padding: 2px 15px;
+}
+
+.videos article h3{
+    color: #b3b3b3;
+    font-size: 14px;
+}
+
+.videos article p{
+    font-size: 18px;
+
+}
+
+.videos a{
+    display: block;
+    margin: auto;
+    width: 300px;
+    height: 70px;
+    background: #000;
+    color: white;
+    font-size: 25px;
+    border-radius: 10px;
+    margin-top: 30px;
+    text-align: center;
+    line-height: 70px;
+    text-decoration: none;
+}
+
+footer{
+    display: flex;
+    padding: 30px 20px;
+    background: #000;
+    color: white;
+    align-items: flex-end;    
+}
+
+footer p{
+    font-size: 12px;
+    margin-right: 40px;
+}

@@ -1,0 +1,1123 @@
+/*
+    Resoluciones
+    <420px => Celulares
+    >420px <720px => tablets
+    >720px => desktop
+    >1366 => desktop big
+
+*/
+
+/*   AJUSTES GLOBALES   */
+
+@font-face {
+    font-family: lubalin-graph;
+    src: url(../font/lubalin-graph.woff);
+}
+
+@font-face {
+    font-family: avenir;
+    src: url(../font/avenir.woff);
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: avenir, sans-serif;
+}
+
+html {
+    font-size: 16px;
+    
+}
+
+body{
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: lubalin-graph, serif;
+}
+
+h2 {
+    font-size: 48px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+section {
+    margin: 20px 50px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+
+/*   AJUSTES GLOBALES   */
+
+
+/*    Componentes     */
+
+.boton {
+    display: block;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.contenedor {
+    margin: auto 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contenedor h2,
+.contenedor aside {
+    text-align: center;
+    width: 100%;
+}
+
+
+/*    Componentes     */
+
+
+/*   HEADER   */
+
+header {
+    background: #000;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* Queda uno en cada punta */
+    align-items: center;
+    /* Centramos verticalmente */
+    width: 100%;
+    padding: 10px 0;
+}
+
+header h1 {
+    display: block;
+    width: 100px;
+    height: 50px;
+    color: #fff;
+    background: url('../img/logo.svg') no-repeat;
+    font-size: 0;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+
+header nav{
+/*    margin-top: -10px;*/
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav li {
+    margin-right: 10px;
+    ;
+}
+
+header nav ul a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 0;
+    border-radius: 50%;
+    /* Cuando aplicamos un border radius de 50% formamos un circulo */
+    /* Para que la imagen de fondo se acople al contenido usamos la propiedad background-size: cover */
+    opacity: 0.8;
+}
+
+header nav ul a:hover {
+    opacity: 1;
+}
+
+/* chicas superdoresas */
+header nav li:nth-child(1) a {
+    background: url("../img/chicas-superpoderosas.webp");
+    background-color: #2eade4;
+    background-size: cover;
+}
+
+/* clarence*/
+header nav li:nth-child(2) a {
+    background: url("../img/clarence.webp");
+    background-color: #fff15c;
+    background-size: cover;
+}
+
+/* Gumball */
+header nav li:nth-child(3) a {
+    background: url("../img/gumball.webp");
+    background-color: rgb(226, 78, 155);
+    background-size: cover;
+}
+
+
+/* Hora de aventura */
+header nav li:nth-child(4) a {
+    background: url("../img/hora-de-aventura.webp");
+    background-color: #2eade4;
+    background-size: cover;
+}
+
+/* Escandalosos */
+header nav li:nth-child(5) a {
+    background: url("../img/los-escandalosos.webp");
+    background-color: #fff15c;
+    background-size: cover;
+}
+
+/* Pokemon Sol y Luna */
+header nav li:nth-child(6) a {
+    background: url("../img/pokemon-sol-y-luna.webp");
+    background-color: rgb(226, 78, 155);
+    background-size: cover;
+}
+
+
+/* chicas superdoresas */
+header nav li:nth-child(7) a {
+    background: url("../img/steven-universe.webp");
+    background-color: #2eade4;
+    background-size: cover;
+}
+
+/* Teen Titans */
+header nav li:nth-child(8) a {
+    background: url("../img/teen-titans.webp");
+    background-color: #fff15c;
+    background-size: cover;
+}
+
+
+/*   HEADER   */
+
+
+
+/*   Otra semana en cartoon   */
+#otraSemana {
+    margin: 0;
+    border-radius: 0;
+    background-color: #c7e2f2;
+    height: 500px;
+    background-image: url("../img/otra-semana-en-cartoon-banner.webp");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: bottom;
+    position: relative;
+}
+
+
+#otraSemana a {
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+/*   Otra semana en cartoon   */
+
+/*   Nuestras series     */
+
+
+
+#series {
+    justify-content: space-around;
+}
+
+#series h2 {
+    margin-bottom: 50px;
+}
+
+#series article {
+    margin: 15px auto;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    /* Esto es para poner los logos */
+    /* tipos de medida */
+    /*
+        medidas absolutas -> px, pt
+        medidas relativas:
+            - % -> Lo vamos a poder usar en relación a nosotros mismos o al contenedor.
+                - elementos de linea: en relación a si mismo. Ej: <a> <img>. También en relación al contenedor (cualquier elemento de bloque)
+            
+    */
+    width: 24%;
+}
+
+/*    Colocar los logos en los article     */
+/*
+    1- Position -> absolute + contendor -> relative
+    2- psudo-elementos/pseudo-selectores
+        :before
+        :after
+    Sirven como un lienzo vacío para poner lo que necesite. Si lo uso, no tienen ni ancho, ni alto, ni un tipo de display específico. Tampoco tienen contenido.
+
+    A estos elementos vamos a tener que setearles si o si un par de cosas:
+        1- display: block;
+        2- width y height;
+        3- contenido -> content: ""
+*/
+
+#series article:before {
+    display: block;
+    width: 200px;
+    height: 150px;
+    /* El contenido queda vacío asi podemos poner la imagen como background */
+    content: "";
+    position: absolute;
+    left: 20%;
+}
+
+/*
+
+#series article:after{
+    background: black;
+    display: block;
+    width: 200px;
+    height: 200px;
+    content: "";
+    position: absolute;
+}
+*/
+
+#series article:nth-child(2) {
+    background-color: rgba(245, 126, 182, 0.5);
+}
+
+#series article:nth-child(3) {
+    background-color: rgba(158, 113, 188, 0.5);
+}
+
+#series article:nth-child(5) {
+    background-color: rgba(226, 78, 155, 0.5);
+    /*     reordenar las columnas     */
+
+}
+
+#series article:nth-child(4) {
+    background-color: rgba(0, 159, 220, 0.5);
+}
+
+#series article:nth-child(7) {
+    background-color: rgba(218, 92, 69, 0.5);
+}
+
+#series article:nth-child(8) {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#series article:nth-child(9) {
+    background-color: rgba(253, 207, 48, 0.5);
+}
+
+#series article:nth-child(10) {
+    background: rgba(47, 182, 234, 0.5);
+}
+
+
+#series article:nth-child(2):before {
+    background: url("../img/chicas-superpoderosas-logo.webp") no-repeat;
+    background-size: 100% auto;
+    top: -65px;
+}
+
+#series article:nth-child(3):before {
+    background: url("../img/clarence-logo.webp") no-repeat;
+    background-size: 100% auto;
+    top: -35px;
+}
+
+#series article:nth-child(5):before {
+    background: url("../img/gumball-logo.webp") no-repeat;
+    background-size: 100% auto;
+    top: -80px;
+}
+
+#series article:nth-child(4):before {
+    background: url("../img/hora-de-aventura-logo.webp") no-repeat;
+    background-size: 100% auto;
+    top: -50px;
+}
+
+#series article:nth-child(7):before {
+    background: url("../img/escandalosos-logo.webp") no-repeat;
+    background-size: 100% auto;
+    top: -65px;
+    width: 150px;
+    left: 25%;
+}
+
+#series article:nth-child(8):before {
+    background: url("../img/pokemon-sol-y-luna-logo.webp") no-repeat;
+    background-size: 100% auto;
+    top: -65px;
+    width: 150px;
+    left: 25%;
+}
+
+#series article:nth-child(9):before {
+    background: url("../img/steven-universe-logo.webp") no-repeat;
+    background-size: 100% auto;
+    top: -60px;
+}
+
+#series article:nth-child(10):before {
+    background: url("../img/teen-titans-logo.webp") no-repeat;
+    background-size: 100% auto;
+    top: -55px;
+    width: 150px;
+    left: 25%;
+}
+
+
+#series article h3 {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#series aside {
+    height: 300px;
+    margin: 60px auto;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /*
+        pasamos varias imagenes en un mismo background.
+        ur(...) no-repeat, url(...)
+    */
+    background: url("../img/cartunes-banner.webp") no-repeat, url("../img/cartunes-pattern.svg") no-repeat;
+    background-color: #342e34;
+}
+
+#series aside div {
+
+    width: 50%;
+    background: ;
+    color: #fff;
+    padding: 0;
+}
+
+
+
+
+/*   Nuestras series     */
+
+
+/*  Banner  */
+
+#banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-left: 60px solid rgb(226, 78, 155);
+    border-right: 60px solid rgb(226, 78, 155);
+
+}
+
+#banner img {
+    width: 50%;
+}
+
+/*  Banner  */
+
+
+/*    Videos     */
+
+#videos {
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#videos article {
+    width: 25%;
+}
+
+
+#videos article img {
+    /*  para que la imagen ocupe como máximo el ancho del contenedor max-width: 100% 
+        Esto hace que como máximo mida lo que mide el ancho del contenedor y nos evitamos que la imagen supere los bordes del contenedor.
+    */
+    max-width: 100%;
+}
+
+#videos article h3 {
+    color: #b3b3b3;
+    font-size: 14px;
+    padding: 2px 10px;
+}
+
+#videos article p {
+    color: #000;
+    font-size: 18px;
+    padding: 2px 10px;
+}
+
+#videos .boton {
+    width: 300px;
+    height: 70px;
+    line-height: 70px;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+/*    Videos    */
+
+
+
+/*    Formulario    */
+
+#contacto {
+    justify-content: center;
+}
+
+#contacto form {
+    width: 50%;
+    background: rgba(245, 126, 182, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#contacto form div {
+    width: 100%;
+    margin: 15px auto;
+}
+
+#contacto form div label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#contacto form div input,
+#contacto form div textarea {
+    width: 100%;
+    height: 30px;
+}
+
+#contacto form div textarea {
+    height: 80px;
+}
+
+/*
+    Otra forma de centrar elementos
+    es usar el display:block y un margin:auto;
+*/
+#contacto form .boton {
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    margin: auto;
+}
+
+/*    Formulario    */
+
+
+
+/*    Footer    */
+footer {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-wrap:  wrap;
+    align-items: center;
+    padding: 20px 25px;
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 10px;
+    text-align: center;
+}
+
+footer img {
+    max-width: 50%;
+    order: -1;
+}
+
+/*    Footer    */
+
+
+
+/*
+    Aplica estos cambios solamente cuando la pantalla mida entre 400px y 768px
+*/
+@media only screen and (min-width: 420px) {
+    main {
+        width: 650px;
+    }
+
+    #series article {
+        margin: 50px auto;
+        width: 48%;
+    }
+
+}
+
+/* tablet */
+@media only screen and (min-width: 720px) {
+    main {
+        width: 650px;
+    }
+
+    #series article {
+        margin: 50px auto;
+        width: 48%;
+    }
+
+}
+
+
+/* escritorio */
+@media only screen and (min-width: 1200px) {
+
+    h2 {
+        font-size: 48px;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    section {
+        margin: 20px 50px;
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+
+    /*   AJUSTES GLOBALES   */
+
+
+    /*    Componentes     */
+
+    .boton {
+        display: block;
+        color: #fff;
+        background-color: #000;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 10px;
+    }
+
+    .contenedor {
+        margin: auto 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .contenedor h2,
+    .contenedor aside {
+        text-align: center;
+        width: 100%;
+    }
+
+
+    /*    Componentes     */
+
+
+    /*   HEADER   */
+
+    header {
+        background: #000;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        /* Queda uno en cada punta */
+        align-items: center;
+        /* Centramos verticalmente */
+    }
+
+    header h1 {
+        display: block;
+        width: 100px;
+        height: 50px;
+        color: #fff;
+        background: url('../img/logo.svg') no-repeat;
+        font-size: 0;
+        margin-left: 30px;
+    }
+
+
+    header nav ul {
+        display: flex;
+    }
+
+    header nav li {
+        margin-right: 10px;
+        ;
+    }
+
+    header nav ul a {
+        display: block;
+        width: 50px;
+        height: 50px;
+        font-size: 0;
+        border-radius: 50%;
+        /* Cuando aplicamos un border radius de 50% formamos un circulo */
+        /* Para que la imagen de fondo se acople al contenido usamos la propiedad background-size: cover */
+        opacity: 0.8;
+    }
+
+    header nav ul a:hover {
+        opacity: 1;
+    }
+
+    /* chicas superdoresas */
+    header nav li:nth-child(1) a {
+        background: url("../img/chicas-superpoderosas.webp");
+        background-color: #2eade4;
+        background-size: cover;
+    }
+
+    /* clarence*/
+    header nav li:nth-child(2) a {
+        background: url("../img/clarence.webp");
+        background-color: #fff15c;
+        background-size: cover;
+    }
+
+    /* Gumball */
+    header nav li:nth-child(3) a {
+        background: url("../img/gumball.webp");
+        background-color: rgb(226, 78, 155);
+        background-size: cover;
+    }
+
+
+    /* Hora de aventura */
+    header nav li:nth-child(4) a {
+        background: url("../img/hora-de-aventura.webp");
+        background-color: #2eade4;
+        background-size: cover;
+    }
+
+    /* Escandalosos */
+    header nav li:nth-child(5) a {
+        background: url("../img/los-escandalosos.webp");
+        background-color: #fff15c;
+        background-size: cover;
+    }
+
+    /* Pokemon Sol y Luna */
+    header nav li:nth-child(6) a {
+        background: url("../img/pokemon-sol-y-luna.webp");
+        background-color: rgb(226, 78, 155);
+        background-size: cover;
+    }
+
+
+    /* chicas superdoresas */
+    header nav li:nth-child(7) a {
+        background: url("../img/steven-universe.webp");
+        background-color: #2eade4;
+        background-size: cover;
+    }
+
+    /* Teen Titans */
+    header nav li:nth-child(8) a {
+        background: url("../img/teen-titans.webp");
+        background-color: #fff15c;
+        background-size: cover;
+    }
+
+
+    /*   HEADER   */
+
+
+    main {
+        width: 1200px;
+        margin: auto;
+    }
+
+    /*   Otra semana en cartoon   */
+    #otraSemana {
+        margin: 0;
+        border-radius: 0;
+        background-color: #c7e2f2;
+        height: 500px;
+        background-image: url("../img/otra-semana-en-cartoon-banner.webp");
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: bottom;
+        position: relative;
+    }
+
+
+    #otraSemana a {
+        width: 200px;
+        height: 40px;
+        /*
+        Para centrar verticalmente el texto del link vemos cuanto mide el alto del link (40px) y le damos ese valor al interlineado
+    */
+        line-height: 40px;
+        /*
+        Position: 3 valores
+            - fixed: Posición fija dentro de la pantalla, donde yo le diga que se quede, se queda y por más que haga scroll sigue ahi. Es necesario que le especifiquemos las coordenadas donde posicionarse, lo hago con las propiedades top, bottom, left y right.
+            - absolute: Este nos permite posicionar el elemento donde nosotros querramos pero, si hago scroll sigue ahi. Lo pongo en un lugar pero contextualizado, te quedas a 20px de la izquierda del contenedor #otraSemana.
+            Para que nosotros podamos contextualizar dentro de un contenedor, ese contenedor tambien tiene que tener una propiedad position, pero esta vez va a llevar el valor relative.
+            Si no tienen un elemento padre con position relative, toma como referencia el body.
+            - relative: Permite contextualizar al elemento y a los elementos con posicion absoluta que estén dentro de el.
+            
+    */
+        position: absolute;
+        bottom: 70px;
+        left: 370px;
+    }
+
+    /*   Otra semana en cartoon   */
+
+    /*   Nuestras series     */
+
+
+
+    #series {
+        justify-content: space-around;
+    }
+
+    #series h2 {
+        margin-bottom: 50px;
+    }
+
+    #series article {
+        margin: 15px auto;
+        padding: 10px;
+        border-radius: 10px;
+        position: relative;
+        /* Esto es para poner los logos */
+        /* tipos de medida */
+        /*
+        medidas absolutas -> px, pt
+        medidas relativas:
+            - % -> Lo vamos a poder usar en relación a nosotros mismos o al contenedor.
+                - elementos de linea: en relación a si mismo. Ej: <a> <img>. También en relación al contenedor (cualquier elemento de bloque)
+            
+    */
+        width: 24%;
+    }
+
+    /*    Colocar los logos en los article     */
+    /*
+    1- Position -> absolute + contendor -> relative
+    2- psudo-elementos/pseudo-selectores
+        :before
+        :after
+    Sirven como un lienzo vacío para poner lo que necesite. Si lo uso, no tienen ni ancho, ni alto, ni un tipo de display específico. Tampoco tienen contenido.
+
+    A estos elementos vamos a tener que setearles si o si un par de cosas:
+        1- display: block;
+        2- width y height;
+        3- contenido -> content: ""
+*/
+
+    #series article:before {
+        display: block;
+        width: 200px;
+        height: 150px;
+        /* El contenido queda vacío asi podemos poner la imagen como background */
+        content: "";
+        position: absolute;
+        left: 20%;
+    }
+
+    /*
+
+#series article:after{
+    background: black;
+    display: block;
+    width: 200px;
+    height: 200px;
+    content: "";
+    position: absolute;
+}
+*/
+
+    #series article:nth-child(2) {
+        background-color: rgba(245, 126, 182, 0.5);
+    }
+
+    #series article:nth-child(3) {
+        background-color: rgba(158, 113, 188, 0.5);
+    }
+
+    #series article:nth-child(5) {
+        background-color: rgba(226, 78, 155, 0.5);
+        /*     reordenar las columnas     */
+
+    }
+
+    #series article:nth-child(4) {
+        background-color: rgba(0, 159, 220, 0.5);
+    }
+
+    #series article:nth-child(7) {
+        background-color: rgba(218, 92, 69, 0.5);
+    }
+
+    #series article:nth-child(8) {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    #series article:nth-child(9) {
+        background-color: rgba(253, 207, 48, 0.5);
+    }
+
+    #series article:nth-child(10) {
+        background: rgba(47, 182, 234, 0.5);
+    }
+
+
+    #series article:nth-child(2):before {
+        background: url("../img/chicas-superpoderosas-logo.webp") no-repeat;
+        background-size: 100% auto;
+        top: -65px;
+    }
+
+    #series article:nth-child(3):before {
+        background: url("../img/clarence-logo.webp") no-repeat;
+        background-size: 100% auto;
+        top: -35px;
+    }
+
+    #series article:nth-child(5):before {
+        background: url("../img/gumball-logo.webp") no-repeat;
+        background-size: 100% auto;
+        top: -80px;
+    }
+
+    #series article:nth-child(4):before {
+        background: url("../img/hora-de-aventura-logo.webp") no-repeat;
+        background-size: 100% auto;
+        top: -50px;
+    }
+
+    #series article:nth-child(7):before {
+        background: url("../img/escandalosos-logo.webp") no-repeat;
+        background-size: 100% auto;
+        top: -65px;
+        width: 150px;
+        left: 25%;
+    }
+
+    #series article:nth-child(8):before {
+        background: url("../img/pokemon-sol-y-luna-logo.webp") no-repeat;
+        background-size: 100% auto;
+        top: -65px;
+        width: 150px;
+        left: 25%;
+    }
+
+    #series article:nth-child(9):before {
+        background: url("../img/steven-universe-logo.webp") no-repeat;
+        background-size: 100% auto;
+        top: -60px;
+    }
+
+    #series article:nth-child(10):before {
+        background: url("../img/teen-titans-logo.webp") no-repeat;
+        background-size: 100% auto;
+        top: -55px;
+        width: 150px;
+        left: 25%;
+    }
+
+
+    #series article h3 {
+        font-size: 36px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    #series aside {
+        height: 300px;
+        margin: 60px auto;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        /*
+        pasamos varias imagenes en un mismo background.
+        ur(...) no-repeat, url(...)
+    */
+        background: url("../img/cartunes-banner.webp") no-repeat, url("../img/cartunes-pattern.svg") no-repeat;
+        background-color: #342e34;
+    }
+
+    #series aside div {
+
+        width: 50%;
+        background: ;
+        color: #fff;
+        padding: 0;
+    }
+
+
+
+
+    /*   Nuestras series     */
+
+
+    /*  Banner  */
+
+    #banner {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        border-left: 60px solid rgb(226, 78, 155);
+        border-right: 60px solid rgb(226, 78, 155);
+
+    }
+
+    #banner img {
+        width: 50%;
+    }
+
+    /*  Banner  */
+
+
+    /*    Videos     */
+
+    #videos {
+        justify-content: center;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    #videos article {
+        width: 25%;
+    }
+
+
+    #videos article img {
+        /*  para que la imagen ocupe como máximo el ancho del contenedor max-width: 100% 
+        Esto hace que como máximo mida lo que mide el ancho del contenedor y nos evitamos que la imagen supere los bordes del contenedor.
+    */
+        max-width: 100%;
+    }
+
+    #videos article h3 {
+        color: #b3b3b3;
+        font-size: 14px;
+        padding: 2px 10px;
+    }
+
+    #videos article p {
+        color: #000;
+        font-size: 18px;
+        padding: 2px 10px;
+    }
+
+    #videos .boton {
+        width: 300px;
+        height: 70px;
+        line-height: 70px;
+        font-size: 20px;
+        margin-top: 30px;
+    }
+
+    /*    Videos    */
+
+
+
+    /*    Formulario    */
+
+    #contacto {
+        justify-content: center;
+    }
+
+    #contacto form {
+        width: 50%;
+        background: rgba(245, 126, 182, 0.5);
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    #contacto form div {
+        width: 100%;
+        margin: 15px auto;
+    }
+
+    #contacto form div label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    #contacto form div input,
+    #contacto form div textarea {
+        width: 100%;
+        height: 30px;
+    }
+
+    #contacto form div textarea {
+        height: 80px;
+    }
+
+    /*
+    Otra forma de centrar elementos
+    es usar el display:block y un margin:auto;
+*/
+    #contacto form .boton {
+        width: 150px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+        margin: auto;
+    }
+
+    /*    Formulario    */
+
+
+
+    /*    Footer    */
+    footer {
+        width: 100%;
+        background-color: #000;
+        color: #fff;
+        display: flex;
+        height: 120px;
+        justify-content: space-between;
+        flex-wrap:  nowrap;
+        align-items: center;
+        padding: 20px 25px;
+    }
+
+    footer p {
+        margin-right: 10px;
+        font-size: 12px;
+    }
+
+    footer img {
+        max-width: 25%;
+    }
+
+    /*    Footer    */
+
+
+}
+
+@media print {
+
+    #series article {
+        margin: 50px auto;
+        width: 48%;
+    }
+
+}
