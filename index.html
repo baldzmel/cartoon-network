@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cartoon Network</title>
+    
+    <!-- ESTA ETIQUETA DEFINE COMO SE TIENE QUE COMPORTAR NUESTRO VIEWPORT (lienzo) EN CADA RESOLUCIÓN - 
+            como ancho, el tamaño del dispositivo.
+            El usuario no pueda hacer zoom
+     -->
+    <meta name="viewport" content="width=device-width, user-scallable=no">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<!--   
+   General:
+   
+        Colores:
+            - azul: #2eade4;
+            - amarillo: #fff15c;   
+            - fucsia: rgb(226, 78, 155);
+
+        
+        Los h2 tienen que tener un tamaño de fuente de 48px y estar centrados. Tiene que tener un margin en el eje Y de 20px.
+        Los section tienen que tener un margin en el eje y de 20px y en el eje x de 50px
+        Un padding de 15px. Además tener un borde redondeado de 10px
+
+-->
+    <header>
+        <!--  Vamos a ocultar el h1 y poner el logo de cartoon  -->
+        <h1>Cartoon Network</h1>
+        
+        <nav>
+            <ul>
+                <!--  Esto lo vamos a convertir en íconos 
+                    - las imágenes tienen un tamaño de 100 x 100px.
+                    - Usarlas más chicas (50-70px)
+                -->
+                <li>
+                    <a href="#">Chicas Superpoderosas</a>
+                </li>
+                <li>
+                    <a href="#">Clarence</a>
+                </li>
+                <li>
+                    <a href="#">Gumball</a>
+                </li>
+                <li>
+                    <a href="#">Hora de aventura</a>
+                </li>
+                <li>
+                    <a href="#">Escandalosos</a>
+                </li>
+                <li>
+                    <a href="#">Pokemon Sol y Luna</a>
+                </li>
+                <li>
+                    <a href="#">Steven Universe</a>
+                </li>
+                <li>
+                    <a href="#">Teen Titans</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       
+        <!--       
+            - El section sin margin ni border-radius
+            - Alto de 500px
+            - Color de fondo #c7e2f2
+            - background banner de otra semana en cartoon que ocupe todo el ancho y esté pegado al borde inferior.
+            - El link "ver" tiene que quedar abajo del logo de cartoon (left: 370px - bottom 70px) con un ancho de 200px. 
+        -->
+        <section id="otraSemana">
+            <h2>Otra Semana en Cartoon</h2>
+            <p>En
+                este increíble repaso semanal, con secciones tan divertidas como ocurrentes,
+                verás los momentos más desopilantes y llamativos que vivieron tus personajes
+                preferidos a lo largo de la semana... ¡ni el más mínimo detalle se nos escapa!
+                Te invitamos a explorar tus shows favoritos de una manera muy singular en Otra
+                semana en Cartoon. </p>
+
+            
+                
+            <a href="#" class="boton">Ver</a>
+            
+        </section>
+
+       
+        <!--       
+            - El section tiene que tener un margen y padding en el eje X de 0px. 
+            - Todos los articles tienen que quedar uno al lado del otro en 2 filas de 4 y un margin Y de 15px. Tambien un padding de 10px y un borde redondeado de 10px.
+                Los h3 tienen que tener un tamaño de fuente de 36px y centrado.
+                Cada uno tiene un color:
+                    - rgba(245,126,182,0.5)
+                    - rgba(158,113,188,0.5)
+                    - rgba(226,78,155,0.5)
+                    - rgba(0,159,220,0.5)
+                    - rgba(218,92,69,0.5)
+                    - rgba(0,0,0,0.5)
+                    - rgba(253,207,48,0.5)
+                    - rgba(47,182,234,0.5)
+            - El h2 tiene que ocupar todo el ancho del contenedor y estar centrado.
+            - El aside tiene que ocupar todo el ancho, un alto de 300px y tener un margen en el eje Y y un padding de 20px. Todo el texto tiene que estar del lado derecho ocupando la mitad del contendor, con el texto centrado, del lado izquierdo tiene que estar la imágen cartunes-banner. Como imagen de fondo se usa el cartunes-pattern y de color de fondo #342e34
+        -->
+        <section id="series" class="contenedor">
+            <h2>Nuestras series</h2>
+
+            <article>
+                <h3>Las chicas superpoderosas</h3>
+                <p>Bombón, Burbuja y Bellota son las Chicas
+                    Superpoderosas. Son tres pequeñas niñas con una misión: salvar al mundo antes
+                    de la hora de dormir. Ellas viven con el Profesor Utonio en una casa en las
+                    afueras de Saltadilla, donde luchan con monstruos y villanos.</p>
+                    
+                    
+            </article>
+
+            <article>
+                <h3>Clarence</h3>
+                <p>CLARENCE es un programa que celebra lo mejor de la niñez: épicas luchas en la tierra, enamoramientos avergonzados, combates de cama elástica, bromas pesadas en fiestas de pijamas y fortalezas secretas en la copa de los árboles. <br>
+                    En resumen, CLARENCE es una refrescante bocanada de irreverencia genuina, servida casi hirviendo, directo del microondas, en una bandeja frente al televisor.</p>
+            </article>
+
+
+            <article>
+                <h3>Hora de Aventura</h3>
+                <p>¿Listo para vivir una aventura extrema? Únete a los mejores amigos Finn, el niño humano y Jake, el perro sabio en la tierra de Ooo para la Hora de Aventura. Esta serie sigue a Finn y Jake mientras se embarcan en una serie de diversión y aventuras únicas!</p>
+            </article>
+
+            <article>
+                <h3>El Increíble Mundo de Gumball</h3>
+                <p>Conoce a los Wattersons: Mamá, Papá, Anaís, Darwin y por supuesto, Gumball. Gumball es un gato de doce años con dotes para la "desgracia" y un fabuloso grupo de raros amigos. ¡Es el increíble mundo de Gumball!</p>
+            </article>
+
+
+
+            <aside>
+
+                <div>
+                    <h2>Cartunes</h2>
+                    <p>¡Escucha la música de tus shows favoritos!</p>
+
+                    <a href="#">Ir al sitio</a>
+                </div>
+            </aside>
+
+
+            <article>
+                <h3>Escandalosos</h3>
+                <p>ESCANDALOSOS es una comedia protagonizada por tres hermanos osos, Pardo, Panda y Polar, que intentan integrarse de maneras muy extrañas en la sociedad de los humanos: ya sea buscando comida, tratando de hacer amigos o de volverse famosos gracias a Internet. Y si pueden conseguir algo de helado (o, en lo posible, yogurt helado descremado) en el camino, ¡mucho mejor!</p>
+            </article>
+
+            <article>
+                <h3>Pokémon Sol y Luna Ultraleyendas</h3>
+                <p>Ash ha completado
+                    tres de las cuatro Grandes Pruebas de la Región de Alola, y más aventuras les
+                    esperarán cuando él y sus amigos consigan más Cristales Z, hagan más amigos
+                    Pokémon y aprendan a hacer ¡Surfeo Mantine! En sus papeles como Ultra
+                    Guardianes, los estudiantes de la Escuela Pokémon toman la importante misión
+                    de proteger el Área Volcánica Wela. Ash conoce a un nuevo rival, Tilo, cuyo
+                    Dartrix le da a Rowlet un gran reto. ¡Incluso Rotom Dex tiene su propia
+                    aventura cuando nuestros héroes visitan el set de su programa de televisión
+                    favorito! Y el sueño del Profesor Kukui de iniciar una Liga Pokémon en Alola
+                    parece estar cerca de hacerse realidad…</p>
+            </article>
+
+            <article>
+                <h3>Steven Universe</h3>
+                <p>¡Cree en Steven! Steven Universe es un héroe mitad humano, mitad gema que está aprendiendo a salvar el mundo con los poderes mágicos que vienen de su ombligo. Steven puede no ser tan poderoso como las Crystal Gems. O tan inteligente. Pero eso no le impide unirse a Garnet, Amatista y perla en sus aventuras mágicas, donde Steven siempre encuentra la manera de salvar el día.</p>
+            </article>
+
+            <article>
+                <h3>Los Jóvenes Titanes en Acción</h3>
+                <p>Robin, Starfire, Raven, Chico Bestia y Cyborg, quienes viven increíbles y divertidísimas aventuras Estos chicos deben salvar el mundo mientras conviven sin la supervisión de un adulto. Después de todo, podrán ser superhéroes pero tienen que lavar la ropa... ¡aunque usen sus súper poderes para hacerlo!</p>
+            </article>
+
+
+        </section>
+
+
+        <!--
+            Ocupa todo el ancho y la imágen centrada.
+            Borde de 60px a los costados de color rgb(226, 78, 155).
+            Margen superior de 50px
+            La imagen va centrada y mide la mitad del contenedor.
+         -->
+        <aside id="banner">
+            <img src="img/banner.jpg" alt="Desafiá tu imaginación con un dibujo">
+        </aside>
+        
+        
+        
+        <!--        
+            Los article van uno al lado del otro en una única fila.
+            La imágen ocupa todo el ancho
+            el h3 va de color gris (#b3b3b3) y un tamaño de 14px
+            el párrafo, color negro y con un tamaño de 18px.
+            
+            El botón mide 300px de ancho y 70px de alto, de color negro y bordes redondeados de 10px, con un tamaño de fuente de 20px y un margen superior de 30px.
+        -->
+        <section  class="contenedor" id="videos">
+            <h2>Top videos</h2>
+            
+            
+            <article>
+                <img src="img/video1.jpg" alt="Clarence">
+                <h3>Clarence</h3>
+                <p>Ansiedad</p>
+            </article>
+            
+            <article>
+                <img src="img/video2.jpg" alt="Steven Universe">
+                <h3>Steven Universe</h3>
+                <p>A León Le Encanta Acomodarse En Una Caja</p>
+            </article>
+            
+            <article>
+                <img src="img/video3.jpg" alt="Manzana y Cebollín">
+                <h3>Manzana y Cebollín</h3>
+                <p>Agua</p>
+            </article>
+            
+            <article>
+                <img src="img/video4.jpg" alt="Toontubers">
+                <h3>Toontubers</h3>
+                <p>Card Wars</p>
+            </article>
+            
+            
+            <a href="#" class="boton">Mirá todos los videos</a>
+            
+        </section>
+        
+        
+        <section id="contacto" class="contenedor">
+            <h2>Contactate con nosotros</h2>
+            
+            <!--    
+                Para manejo de formularios vamos a tener la etiqueta <form></form>
+                
+                Adentro tenemos todos los elementos que pueda soportar la etiqueta:
+                En su mayoría, los elementos son inputs
+                   Etiqueta <input /> -> tiene un atributo type que define el tipo de dato que va a ingresar el usuario
+                       type: 
+                           - text: texto
+                           - number: numero
+                           - email: mail
+                           - password: password (*********)
+                    Todo formulario tiene que tener si o si al final un botón/input de tipo "submit" para enviar el formulario.
+                        
+                        <input type="submit" value="Enviar"/>
+                        
+                        <button type="submit">Enviar</button>
+                        
+                    Diferencias:
+                        - el input es mucho más dificil de modificar con css
+            -->
+            <!-- 
+                Tiene 2 atributos obligatorios
+                    action: A donde quiero mandar estos datos (un archivo que tome esos datos y haga algo - mandar un mail - )
+                    method: Especificar cómo queremos mandar los datos
+                        - Sepan que todo formulario que mande un dato importante, tiene que tener el valor POST en el atributo method.
+                    
+            -->
+            <form action="archivo_que_manda_mail" method="post">
+                <div>
+                <!--   compuesto por 2 elementos: input - label-> la etiqueta en la cual ponemos texto dentro del formulario y lo relacionamos a un input.
+                     El label tiene un atributo for al cual le pasamos el id del input/textarea relacionado.
+                      
+                        Nombre
+                        <input/>  
+                        
+                    Para poner texto multilinea, tenemos la etiqueta <textarea></textarea>
+                    
+              -->
+                   <label for="nombre">Nombre</label>
+                   <input type="text" id="nombre">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+                </div>
+                <div>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea cols="30" rows="10" id="mensaje"></textarea>
+                </div>
+                
+<!--                <input type="submit" value="Enviar">-->
+                <button type="submit" class="boton">Enviar</button>
+            </form>
+            
+        </section>
+    </main>
+
+   
+    <!--   
+        Tiene que ocupar el ancho del body
+        el párrafo queda de un lado y el logo del otro alineados en el centro.
+        Fondo negro letras blancas.
+        
+    -->
+    <footer>
+        <p>
+            Cartoon Network es el hogar de tus dibujos animados favoritos, episodios completos, videos, aplicaciones y juegos gratis. Jugá gratis con tus personajes favoritos de Clarence, Teen Titans GO!, Hora de Aventura con Finn y Jake, Un show más, El increíble mundo de Gumball, Steven Universe, Ben 10, Tio Grandpa, Escandalosos y ¡mucho más!
+        </p>
+
+        <img src="img/logo2.svg" alt="Cartoon Network">
+    </footer>
+</body>
+</html>
